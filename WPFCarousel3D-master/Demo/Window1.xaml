@@ -17,98 +17,14 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-         <StackPanel>
-            <!-- <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Width:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseWidth, Path=Value}" />
-            </StackPanel> -->
-            <!-- <Slider 
-                x:Name="slidEllipseWidth"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="600" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseWidth, Mode=TwoWay}" /> -->
-
-           <!-- <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Height:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseHeight, Path=Value}" />
-            </StackPanel> -->
-            <!-- <Slider 
-                x:Name="slidEllipseHeight"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="600" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseHeight, Mode=TwoWay}" /> -->
-
-            <!-- <CheckBox IsChecked="{Binding ElementName=ellipsePanel3D, Path=TransparencySupportRequired, Mode=TwoWay}">Transparency Support</CheckBox>
-            <CheckBox x:Name="cbxAnimateToSelected">Animate to clicked item</CheckBox> -->
-
+        <StackPanel>
             <Button Content="Add Item (delete)" Click="btnAddItem_Click" Margin="2"/>
             <Button Content="Remove Item (delete)" Click="btnRemoveItem_Click" Margin="2" />
-            
         </StackPanel>
 
         <StackPanel Grid.Column="1">
             <Button Content="ZX Left" x:Name="btnMoveNext" Click="btnMoveNext_Click" Margin="2" />
             <Button Content="ZX Right" x:Name="btnMovePrev" Click="btnMovePrev_Click" Margin="2" />
-            <!-- <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Centre X:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseCentreX, Path=Value}" />
-            </StackPanel>
-            <Slider 
-                x:Name="slidEllipseCentreX"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="1000" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseCentreX, Mode=TwoWay}" />
-
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Centre Y:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseCentreY, Path=Value}" />
-            </StackPanel>
-            <Slider 
-                x:Name="slidEllipseCentreY"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="1000" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseCentreY, Mode=TwoWay}" />
-
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Rotation X:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseRotationX, Path=Value}" />
-                <CheckBox Margin="10,0,0,0" Unchecked="cbxAnimateXChecked" Checked="cbxAnimateXChecked">Animate</CheckBox>
-            </StackPanel>
-            <Slider 
-                x:Name="slidEllipseRotationX"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="360" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseRotationX, Mode=TwoWay}" />
-
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Rotation Y:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseRotationY, Path=Value}" />
-                <CheckBox Margin="10,0,0,0" Unchecked="cbxAnimateYChecked" Checked="cbxAnimateYChecked">Animate</CheckBox>
-            </StackPanel>
-            <Slider 
-                x:Name="slidEllipseRotationY"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="360" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseRotationY, Mode=TwoWay}" />
-
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Ellipse Rotation Z:" />
-                <TextBlock Text="{Binding ElementName=slidEllipseRotationZ, Path=Value, StringFormat={}{0:#}}" />
-                <CheckBox Margin="10,0,0,0" Unchecked="cbxAnimateZChecked" Checked="cbxAnimateZChecked">Animate</CheckBox>
-            </StackPanel>
-            <Slider 
-                x:Name="slidEllipseRotationZ"
-                Margin="5,0,0,0" 
-                Minimum="0" 
-                Maximum="360" 
-                Value="{Binding ElementName=ellipsePanel3D, Path=EllipseRotationZ, Mode=TwoWay}" /> -->
-
         </StackPanel>
 
         <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Grid.ColumnSpan="2" Grid.Row="2" Margin="1">
